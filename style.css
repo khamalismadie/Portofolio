@@ -1,0 +1,191 @@
+body {
+    background-color: #f3fbff;
+}
+img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.round {
+    position: relative;                             
+    border-radius: 50%;
+    border-width: 1em;
+    transition: all .5s;
+    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
+}
+.round:hover, #iconzoom:hover {
+    transform : scale(1.25);
+    -moz-transform : scale(1.25);
+    -webkit-transform : scale(1.25);
+    -o-transform : scale(1.25);
+    -ms-transform : scale(1.25);
+}
+.header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        text-align: center;
+}
+h1 {
+    flex-basis: 20%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    background-clip: border-box;
+    background: -webkit-linear-gradient(rgb(70, 89, 174), rgb(156, 166, 213));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2 {
+    flex-grow: 1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    background-clip: border-box;
+    background: -webkit-linear-gradient(rgb(138, 204, 221), rgb(32, 96, 121));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    background-clip: border-box;
+    background: -webkit-linear-gradient(rgb(138, 221, 206), rgb(32, 121, 42));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+p, li, h4, h5 {
+    color: #2f4666;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-align: center;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-basis: 25%;
+    gap: 1rem;
+    row-gap: 1rem;
+    column-gap: 3rem;
+    border-radius: 0.5rem;
+    align-self: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    background-color: #d9ecef;
+    box-shadow: #c0c0c0 0px 0px 5px;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+.fa:hover { 
+    opacity: 1;
+    border-radius: 5%;
+}
+.fa-github {
+    background: #183153;
+    color: white;
+}
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+.card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    list-style: none;
+    grid-gap: 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    padding: 1rem;
+    text-align: left;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    box-shadow: #c0c0c0 0px 0px 5px;
+}
+.card:hover {
+    transform : scale(1.25);
+    -moz-transform : scale(1.25);
+    -webkit-transform : scale(1.25);
+    -o-transform : scale(1.25);
+    -ms-transform : scale(1.25);
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    background-color: #2f4666;
+    color: #f3fbff;
+}
+.form, .input, .option, .select, .label {
+    display: flex;
+    flex-basis: content;
+    min-height: 12em;
+    max-width: 100%;
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+    border-color: #2f4666;
+    color: #2f4666;
+}
+.form-control {
+    display: flex;
+    flex-basis: content;
+    flex-direction: column;
+}       
+.btn-grad {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da  51%, #314755  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-color: #7a8892;
+    border-radius: 10px;
+    display: block;
+}
+  .btn-grad:hover {
+    background-position: right center; 
+    color: #fff;
+    text-decoration: none;
+}
+ 
